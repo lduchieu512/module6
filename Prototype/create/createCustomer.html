@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Customer</title>
+    <link rel="stylesheet" href="createCusotmer.css">
+
+</head>
+<body>
+<div class="regform">
+    <h1>Thêm mới khách hàng</h1>
+</div>
+<div class="main">
+    <form>
+        <div id="name">
+            <h2 class="name">Họ và tên</h2>
+            <input type="text" class="firstname" name="first_name"><br>
+            <label class="firstlabel">first name </label>
+            <input type="text" class="lastname" name="last_name">
+            <label class="lastlabel"> last label </label>
+        </div>
+
+        <h2 class="name">Giới tính</h2>
+        <span class="radio-group">
+            <input type="radio" id="option1" name="gender" value="Nam">
+            <label for="option1">Nam</label>
+        </span>
+        <span class="radio-group">
+            <input type="radio" id="option2" name="gender" value="Nữ">
+             <label for="option2">Nữ</label>
+        </span>
+
+
+        <h2 class="name">Ngày sinh</h2>
+        <input type="date" class="birthday" name="birthday" placeholder="Ngày sinh">
+
+        <h2 class="name"> CMND </h2>
+        <input type="text" class="email" name="cmnd" placeholder="Chứng minh nhân dân">
+
+        <h2 class="name">Email</h2>
+        <input type="text" class="email" name="email" placeholder="Email">
+
+        <h2 class="name"> Phone</h2>
+        <input type="text" class="code" name="area_code">
+        <label class="area-code">Area code </label>
+        <input type="text" class="number" name="phone">
+        <label class="phone-number">Phone Number</label>
+
+        <h2 class="name">Loại </h2>
+        <select name="subject" class="option">
+            <option disabled="disabled" selected="selected">--Loại khách hàng--</option>
+            <option value="khách hàng sỉ">Khách hàng sỉ</option>
+            <option value="nhà cung cấp">Nhà cung cấp</option>
+        </select>
+        <h2 class="name">Avatar </h2>
+        <span class="avatar">
+           <label for="image-upload"></label>
+        <input type="file" id="image-upload" name="image-upload" accept="image/*">
+        </span>
+
+<!--        <h2 id="coustomer">Area you beginner?</h2>-->
+<!--        <label class="radio">-->
+
+<!--            <input type="radio" class="radio-one" checked="checked" name="">-->
+<!--            <span class="checkmark"></span>-->
+<!--            Yes-->
+<!--        </label>-->
+<!--        <label class="radio">-->
+<!--            <input type="radio" class="radio-two" name="">-->
+<!--            <span class="checkmark"></span>-->
+<!--            No-->
+<!--        </label>-->
+        <button type="submit" class="them">Thêm</button>
+        <button type="submit" class="huy">Huỷ</button>
+<!--                <button type="submit">Register</button>-->
+
+
+    </form>
+</div>
+
+</body>
+</html>
